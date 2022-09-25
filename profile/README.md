@@ -2,24 +2,38 @@
 
 - [Analisi dei requisiti](#analisi-dei-requisiti)
   - [Obiettivo](#obiettivo)
-  - [Requisiti funzionali](#requisiti-funzionali)
-  - [Requisiti non funzionali](#requisiti-non-funzionali)
+  - [Requisiti](#requisiti)
+    - [Requisiti funzionali](#requisiti-funzionali)
+    - [Requisiti non funzionali](#requisiti-non-funzionali)
+- [Architettura](#architettura)
+  - [Architettura front-end](#architettura-front-end)
+  - [Architettura back-end](#architettura-back-end)
 
 # Analisi dei requisiti
 ## Obiettivo
+Il progetto ha come obiettivo la realizzazione di una piattaforma che consente agli utenti di usufruire di 2 servizi:
+1. Mettere a disposizione posti letto a pagamento, chi lo fa viene chiamato host.
+2. Usufruire di tali posti letto a pagamento, chi lo fa viene chiamato guest.
 
-Il progetto ha come obiettivo la realizzazione di un sito web principalmente indirizzato a studenti universitari, consentendo agli utenti di mettere a disposizione camere e posti letto in cambio di un token, utilizzabile da chi ha ospitato qualcuno per usufruire a sua volta delle camere messe a disposizione dagli altri utenti.
+## Requisiti
+### Requisiti funzionali
+- Saranno richiesti agli utenti solamente i dati strettamente necessari al servizio di cui vogliono usufruire con un minimo di affidabilità.
+- Un guest non dovrà in qualche modo registrarsi, infatti al momento della prenotazione di un posto letto gli verrà richiesto di dare un nominativo e di pagare una fee (#TODO(Di quanto?)) in Ether usando Metamask, al termine del pagamento gli verrà dato un token (codice) il quale dovrà esibire di persona al suo host per autenticarsi
+- Un host dovrà necessariamente registrarsi (autenticandosi con un account Ethereum usando Metamask) fornendo i seguenti dati: un nominativo, un contatto telegram (che dovrà essere autenticato) e #TODO(minimo ad un massimo di giorni per poter ricevere una prenotazione?). Poi quando vuole inserire un annuncio dovrà fornire ulteriori informazioni, cioè l'indirizzo dell'abitazione, una descrizione, un prezzo (in qualsiasi moneta), e una serie di funzionalità del posto letto #TODO( come internet?, un bagno?, dovrò lasciare la stanza come l'ho trovata?, riscaldamento? Condizionatore? e una descri)
+- Dovrà essere creato un account speciale per un admin, sempre autenticato con un account Ethereum, il quale potrà rimuovere annunci di posti letto.
+- Un utente che ha usufruito di un posto letto può lasciare un voto da 1 a 5 stelle alla persona che ha messo a lo ha messo a disposizione, autenticandosi con Metamask. (#TODO(Se togliessimo questa fueature potremmo anche non salvare le prenotazioni e renderebbe tutto più snello))
+- Per il pagamento del posto letto dovranno pensarci chi lo mette a disposizione e chi lo usufruisce mettendosi d'accordo. Avvenuta la prenotazione la piattaforma non sarà responsabile di nulla qualsiasi cosa avvenga.
+- La ricerca dei posti letto avverrà inserendo un luogo, dal quale verranno elencati i posti letto in ordine di vicinanza a quel luogo.
+- Sarà possibile cancellare il proprio profilo da host.
+- Sarà possibile cancellare i propri annunci.
+### Requisiti non funzionali
+- La piattaforma dovrà essere una #TODO(PWA? Vue.js?).
+- Il backend sarà scritto in Java.
+- Le API per comunicare col il server saranno implementate con gRPC.
 
-Nello specifico il sito consentirà agli utenti di:
 
-- Registrarsi caricando i propri dati personali (quali?)(e foto di loro stessi?) (facciamo mettere pure una bio?? sembra una cosa carina, ma non voglio che diventi tinder 2.0), e accedere al proprio profilo attraverso diversi metodi di autenticazione (prevedo casini pazzeschi nel farlo bene ma shh). 
-- Caricare annunci di posti letto completi di foto e descrizione, e similmente aggiungere richieste per luoghi e giorni specifici. (Ci aggiungiamo pure un sistema che cerca di matchare le cose in automatico? sarebbe figo da fare ma boh)
-Ogni volta che un posto letto viene utilizzato, chi ospita riceverà un token
-- Visualizzare gli annunci in modo anonimo nel caso un utente non voglia registrarsi
-- Prenotare un posto letto consumando uno dei token, e opzionalmente comunicare con l'ospite attraverso telegram.  
-- Rimuovere un annuncio precedentemente caricato
-
-## Requisiti funzionali
-bla bla
-## Requisiti non funzionali
-bla bla
+# Architettura
+## Architettura front-end
+#TODO
+## Architettura back-end
+#TODO
