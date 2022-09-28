@@ -2,6 +2,7 @@
 
 - [Analisi dei requisiti](#analisi-dei-requisiti)
   - [Obiettivo](#obiettivo)
+  - [Assunzioni](#assunzioni)
   - [Requisiti](#requisiti)
     - [Requisiti funzionali](#requisiti-funzionali)
     - [Requisiti non funzionali](#requisiti-non-funzionali)
@@ -16,6 +17,12 @@ Il progetto ha come obiettivo la realizzazione di una piattaforma che consenta a
 2. Usufruire di tali posti letto pagando 1 REST, chi lo fa viene chiamato guest.
 
 Inoltre il token è indipendente dalla piattaforma, l'unica convenzione per usare il token è implementare esclusivamente i 2 servizi sopra elencati.
+## Assunzioni
+Ignoreremo 4 problemi che dovrebbero essere considerati se si vuole realmente pubblicare il progetto:
+1. Il problema della possibile speculazione/inflazione/deficit o surplus di liquidità sul token è maggiore se adottiamo questo sistema, ma inevitabile, inoltre forse il prezzo nel tempo si può stabilizzare con quello medio di un posto letto che uno pagherebbe, ma non sono sicuro, in ogni caso questo problema lo ignoreremo, almeno finchè il progetto non verrà pubblicato, ma questo non rientra nei nostri piano al fine di realizzare il progetto.
+2. Ignoreremo anche il problema l'airdrop iniziale (distribuzione di liquidità), dato che non è un problema se non lanciamo il sito pubblicamente. Una possibile soluzione potrà essere che per ricevere l'airdrop un utente dovrà autenticarsi con qualche provider di identità digitale affidabile (come spid o mail universitaria), ma tanto questo non rientra nei nostri piani.
+3. Ignoreremo potenziali truffe per ora, dato che il progetto non verrà pubblicato. Al massimo si può aggiungere un sistema di recensioni.
+4. Ignoreremo la criptografia delle comunicazioni client-server.
 
 ## Requisiti
 ### Requisiti funzionali
@@ -26,9 +33,8 @@ Inoltre il token è indipendente dalla piattaforma, l'unica convenzione per usar
 - Sarà possibile cancellare il proprio profilo da host.
 - Sarà possibile cancellare i propri annunci.
 ### Requisiti non funzionali
-- La piattaforma dovrà essere una #TODO(PWA? Vue.js?).
-- Il backend sarà scritto in Java.
-- Le API per comunicare col il server saranno implementate con gRPC.
+- La piattaforma dovrà implementare gli standard w3c
+- #TODO
 
 
 # Architettura
