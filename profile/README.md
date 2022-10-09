@@ -5,6 +5,8 @@
   - [Requisiti](#requisiti)
     - [Requisiti funzionali](#requisiti-funzionali)
     - [Requisiti non funzionali](#requisiti-non-funzionali)
+- [Mockup](#mockup)
+- [Sistema](#sistema)
 
 # Analisi dei requisiti
 
@@ -126,3 +128,19 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
   - Chromium 81 e successivi
   - Safari 16 e successivi
   - Edge 88 e successivi
+# Mockup
+<img src="mockup/Mockup3-01.jpg" width="600"/>
+<img src="mockup/Mockup3-02.jpg" width="600"/>
+<img src="mockup/Mockup3-03.jpg" width="600"/>
+<img src="mockup/Mockup3-04.jpg" width="600"/>
+<img src="mockup/Mockup3-05.jpg" width="600"/>
+<img src="mockup/Mockup3-06.jpg" width="600"/>
+<img src="mockup/Mockup3-07.jpg" width="600"/>
+<img src="mockup/Mockup3-08.jpg" width="600"/>
+<img src="mockup/Mockup3-09.jpg" width="600"/>
+<img src="mockup/Mockup3-10.jpg" width="600"/>
+<img src="mockup/Mockup3-11.jpg" width="600"/>
+<img src="mockup/Mockup3-12.jpg" width="600"/>
+
+# Sistema
+<img src="sistema.png" width="400"/>
