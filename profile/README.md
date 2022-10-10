@@ -158,7 +158,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF2: Memorizzazione
 
-  Il sito utilizzerà mongoDb per memorizzare i dati degli utenti, i loro annunci contenti foto ed informazioni.
+  Il sito utilizzerà MongoDB per memorizzare i dati degli utenti, i loro annunci contenti foto ed informazioni.
 
 - RNF3: Logging & Monitoring
 
@@ -170,7 +170,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF5: Scambio di RESTs
 
-  Gli scambi di rest altro non saranno che transazioni sulla blockchain EVM-compatible.
+  Gli scambi di REST altro non saranno che transazioni sulla blockchain EVM-compatible.
 
 - RNF6: Limiti di utilizzo
 
@@ -190,7 +190,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF9: Affidabilità
 
-  Il fatto che il token REST sarà decentralizzato garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
+  Esendo il token REST decentralizzato, garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
 
 - RNF10: Prevenzione truffe
 
@@ -206,7 +206,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF13: Compatibilità
 
-  Il sito deve essere mobile-first, deve aderire allo standard w3c, e deve essere compatibile con i browsers più utilizzati, quali:
+  Il sito deve essere mobile-first, deve aderire allo standard w3c e deve essere compatibile con i browsers più utilizzati, quali:
 
   - Firefox 91 e successivi
   - Chromium 81 e successivi
