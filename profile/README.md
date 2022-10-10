@@ -23,28 +23,82 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 ### Requisiti funzionali
 
-- RF1: Registrazione
+#### 1. Utenti:
 
-  Alla registrazione di un utente verranno richiesti i seguenti dati: nome, cognome, e-mail, ed un account Telegram. Bisognerà inoltre verificare la propria mail ed aggiungere il proprio account Metamask per i futuri accessi. Opzionalmente si potrà inserire delle foto.
-  Ogni nuovo utente riceverà 5 RESTs.
+- RF1.1: Utente anonimo
 
-- RF2: Autenticazione
+  Il sistema consentirà agli utenti di visualizzare le stanze disponibili senza doversi registrare od autenticarsi.
+
+- RF1.2: Registrazione
+
+  Alla registrazione di un utente verranno richiesti i seguenti dati: nome, cognome, e-mail, ed un account Telegram.
+
+- RF1.3: Verifica Registrazione
+
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contentente un codice segreto.
+  Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
+
+- RF1.4: Autenticazione
 
   Il sistema consentirà agli utenti di autenticarsi tramite Metamask.
 
-- RF3: Cercare i posti letto
+- RF1.5: RESTs
+
+  Il sistema consentirà agli utenti di visualizzare il bilancio dei loro RESTs.
+
+- RF1.6: Uscire dal proprio account
+
+  Il sistema consentirà agli utenti di uscire dal proprio account.
+
+- RF1.7: Eliminare il proprio account
+
+  Il sistema consentirà agli utenti di cancellare il proprio account.
+
+- RF1.8: Visualizzare dati profilo
+
+  Il sistema consentirà agli utenti di visualizzare il proprio profilo.
+
+- RF1.9: Modificare dati profilo
+
+  Il sistema consentirà agli utenti di modificare il proprio profilo.
+
+#### 2. Usufruire di posti letto:
+
+- RF2.1: Cercare posti letto
 
   Il sistema consentirà di cercare posti letto inserendo un luogo e una data: verranno elencati i posti letto in ordine di vicinanza a quel luogo e disponibili in tali date.
 
-- RF4: Prenotare un posto letto
+- RF2.2: Visualizzare recensioni di altri guest
 
-  Una volta autenticato l'utente potrà scambiare un REST per ottenere il posto letto. Confermata la prenotazione gli verrà mostrato un codice che dovrà esibire all'host per autenticarsi di persona.
+  Il sistema consentirà agli utenti di visualizzare le recensioni di altri guest prima di effettuare la prenotazione.
 
-- RF5: Recensire i posti letto
+- RF2.3: Visualizzare commenti di altri guest
 
-  Al termine di ogni interazione, chi viene ospitato potrà recensire il posto letto con un voto da 1 a 5.
+  Il sistema consentirà agli utenti di visualizzare i commenti di altri guest prima di effettuare la prenotazione.
 
-- RF6: Aggiungere un posto letto al proprio account
+- RF2.4: Prenotare un posto letto
+
+  Una volta autenticato l'utente potrà scambiare un REST per ottenere il posto letto.
+
+- RF2.5: Visualizzare le proprie prenotazioni
+
+  Il sistema consentirà di visualizzare le proprie prenotazioni
+
+- RF2.6: Comunicare con gli host
+
+  Il sistema consentirà ai guest di visualizzare il contatto Telegram degli host e di contattarli.
+
+- RF2.7: Recensire posti letto
+
+  Dopo aver usufruito di un posto letto, i guest potranno recensirlo.
+
+- RF2.8: Valutare posti letto
+
+  Dopo aver usufruito di un posto letto, i guest potranno valutarlo con un punteggio da 1 a 5.
+
+#### 3. Offrire posti letto:
+
+- RF3.1 Aggiungere un posto letto
 
   Gli utenti, una volta autenticati, per inserire un posto letto dovranno fornire: l'indirizzo dell'abitazione, da 1 a 5 foto, il tempo di preavviso per la prenotazione e opzionalmente delle informazioni per l'ospite.
   Inoltre, dovranno specificare la presenza dei seguenti servizi:
@@ -58,18 +112,42 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
   - presenza biancheria da letto
   - presenza cuscini
 
-  Sarà possibile rimuovere il posto letto.
-  Il sistema consentirà di aggiornare le informazioni o rimuovere posti letto.
+- RF3.2: Visualizzare i propri posti letto
 
-- RF7: Offrire un posto letto
+  Il sistema consentirà agli utenti di visualizzare i posti letto inseriti.
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità tramite un annuncio.
+- RF3.3 Modificare un posto letto
+
+  Il sistema consentirà agli utenti di modificare i posti letto inseriti.
+
+- RF3.4 Eliminare un posto letto
+
+  Il sistema consentirà agli utenti di eliminare i posti letto inseriti.
+
+- RF3.5 Aggiungere un annuncio
+
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità: così facendo verrà creato un annuncio.
   Fatto ciò, gli altri utenti potranno prenotare il posto letto.
-  Sarà possibile cancellare i propri annunci
 
-- RF8: Gestire il proprio account
+- RF3.6: Visualizzare i propri annunci
 
-  Tutti gli utenti potranno aggiornare i propri dati o cancellare il proprio account.
+  Il sistema consentirà agli utenti di visualizzare gli annunci inseriti.
+
+- RF3.7 Modificare un annuncio
+
+  Il sistema consentirà agli utenti di modificare gli annunci inseriti.
+
+- RF3.8 Eliminare un annuncio
+
+  Il sistema consentirà agli utenti di eliminare gli annunci inseriti.
+
+- RF3.9 Visualizzare i commenti dei guest
+
+  Il sistema consentirà agli host di visualizzare i commenti dei guest.
+
+- RF3.10 Visualizzare le valutazioni dei guest
+
+  Il sistema consentirà agli host di visualizzare le valutazioni lasciate dai guest.
 
 ### Requisiti non funzionali
 
