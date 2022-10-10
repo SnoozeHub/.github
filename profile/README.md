@@ -35,7 +35,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.3: Verifica Registrazione
 
-  Inseriti i dati della registrazione verrà inviata una mail di conferma contentente un codice segreto.
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto.
   Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
 
 - RF1.4: Autenticazione
@@ -164,11 +164,22 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sito consentirà di registrarsi ed autenticarsi con Metamask. Ciò consentirà agli utenti di possedere e scambiare REST.
 
-- RNF4: Limiti di utilizzo
+- RNF4: RESTs
 
-  Perchè il sistema funzioni correttamente assumiamo che ogni utente distinto crei al più un account, così da limitare l'inflazione. Inoltre si assume che ogni utente registrato abbia almeno un posto letto da offrire, così da mantenere una corrispondenza tra i REST e i posti letto reali, sempre per mitigare l'inflazione.
+  Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma.
+  Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi.
+  Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi.
+  Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
 
-- RNF5: Notifiche
+- RNF5: Scambio di RESTs
+
+  Gli scambi di rest altro non saranno che transazioni sulla blockchain EVM-compatible.
+
+- RNF6: Limiti di utilizzo
+
+  Perché il sistema funzioni correttamente assumiamo che ogni utente distinto crei al più un account, così da limitare l'inflazione. Inoltre si assume che ogni utente registrato abbia almeno un posto letto da offrire, così da mantenere una corrispondenza tra i REST e i posti letto reali, sempre per mitigare l'inflazione.
+
+- RNF7: Notifiche
 
   Verranno inviate email di notifica nei seguenti casi:
 
@@ -176,36 +187,46 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
   - Prenotazione posto letto sia all'host che all'ospite
   - Aggiunta di recensione da parte di un ospite
 
-- RNF6: Sicurezza
+- RNF8: Sicurezza
 
   Il sito garantirà la massima sicurezza per gli utenti, avvalendosi del protocollo grpc per la trasmissione dei dati attraverso la rete, e di JWT per autenticare le sessioni. Per la generazione dei JWT verrà utilizzata la signature fornita da Metamask.
 
-- RNF7: Affidabilità
+- RNF9: Affidabilità
 
-  Il token REST sarà decentralizzato su blockchain EVM-compatible, garantendo così agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
-  Inoltre il token sarà indipendente dalla piattaforma: l'unica convenzione per usarlo è implementare esclusivamente i 2 servizi elencati negli obiettivi.
-  Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
+  Il fatto che il token REST sarà decentralizzato garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
 
-- RNF8: Prevenzione truffe
+- RNF10: Prevenzione truffe
 
   La data di creazione di ogni account sarà pubblica, consentendo agli utenti di vedere da quanto tempo un account è presente nel sistema.
 
-- RNF9: Lingua di sistema
+- RNF11: Lingua di sistema
 
   Il sito sarà disponibile in lingua italiana ed inglese.
 
-- RNF10: Prestazioni
+- RNF12: Prestazioni
 
   Il sito utilizzerà sistemi di caching per migliorare le prestazioni in situazioni di scarsa connessione.
 
-- RNF11: Compatibilità
+- RNF13: Compatibilità
 
-  Il sito deve essere mobile-first, deve aderire allo standard w3c, compatibile con i browsers più utilizzati, quali:
+  Il sito deve essere mobile-first, deve aderire allo standard w3c, e deve essere compatibile con i browsers più utilizzati, quali:
 
   - Firefox 91 e successivi
   - Chromium 81 e successivi
   - Safari 16 e successivi
   - Edge 88 e successivi
+
+- RNF14: Apprendimento del sistema
+
+  Gli utenti dovranno essere in grado di utilizzare il sistema con sicurezza dopo 30 minuti di utilizzo.
+
+- RNF15: Verifica account Telegram
+
+  Gli account Telegram degli utenti non verranno verificati in quanto risulterebbe troppo complicato.
+
+- RNF16: Limiti foto
+
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo.
 
 # Mockup front-end
 
@@ -260,5 +281,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 <img src="mockup/Mockup3-12.jpg" width="600"/>
 
 # Mockup Back-end
+
+Di seguito è presente un modello del Back-end del sito
 
 <img src="sistema.png" width="400"/>
