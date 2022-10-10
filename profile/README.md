@@ -282,6 +282,6 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 # Mockup Back-end
 
-Di seguito è presente un modello del Back-end del sito
+Di seguito è presente un modello del Back-end del sito.
 
 <img src="sistema.png" width="400"/>
