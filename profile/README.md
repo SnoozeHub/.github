@@ -128,19 +128,59 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
   - Chromium 81 e successivi
   - Safari 16 e successivi
   - Edge 88 e successivi
-# Mockup
+
+# Mockup front-end
+
+Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresentate le funzioni principali offerte agli utenti.
+
+### - Schermata home
+
 <img src="mockup/Mockup3-01.jpg" width="600"/>
+
+### - Opzioni di login e registrazione
+
 <img src="mockup/Mockup3-02.jpg" width="600"/>
+
+### - Registrazione nuovo utente
+
 <img src="mockup/Mockup3-03.jpg" width="600"/>
+
+### - Conferma codice di verifica
+
 <img src="mockup/Mockup3-04.jpg" width="600"/>
+
+### - Menu gestione account
+
 <img src="mockup/Mockup3-05.jpg" width="600"/>
+
+### - Risultati ricerca stanza
+
 <img src="mockup/Mockup3-06.jpg" width="600"/>
+
+### - Panoramica annuncio
+
 <img src="mockup/Mockup3-07.jpg" width="600"/>
+
+### - Prenotazione stanza
+
 <img src="mockup/Mockup3-08.jpg" width="600"/>
+
+### - Inserimento posto letto
+
 <img src="mockup/Mockup3-09.jpg" width="600"/>
+
+### - Panoramica posti letto caricati
+
 <img src="mockup/Mockup3-10.jpg" width="600"/>
+
+### - Gestione dei propri posti letto
+
 <img src="mockup/Mockup3-11.jpg" width="600"/>
+
+### - Inserimento nuovo annuncio
+
 <img src="mockup/Mockup3-12.jpg" width="600"/>
 
-# Sistema
+# Mockup Back-end
+
 <img src="sistema.png" width="400"/>
