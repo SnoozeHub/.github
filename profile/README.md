@@ -40,7 +40,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.4: Autenticazione
 
-  Il sistema consentirà agli utenti, già registrati, di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obligatoria alla prenotazione di un posto letto.
+  Il sistema consentirà agli utenti, già registrati, di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obbligatoria alla prenotazione di un posto letto.
 
 - RF1.5: RESTs
 
@@ -79,7 +79,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.4: Prenotare un posto letto
 
-  Per poter prenotare un posto letto, l'utente dovrà effettuare l'auteticazione, specificare la data/e e successivamente scambiare un REST.
+  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, specificare la data/e e successivamente scambiare un REST.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
@@ -136,7 +136,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.7 Modificare un annuncio
 
-  Il sistema consentirà agli utenti di modificare le informazioni riguradanti gli annunci inseriti.
+  Il sistema consentirà agli utenti di modificare le informazioni riguardanti gli annunci inseriti.
 
 - RF3.8 Eliminare un annuncio
 
@@ -190,7 +190,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF9: Affidabilità
 
-  Esendo il token REST decentralizzato, garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
+  Essendo il token REST decentralizzato, garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
 
 - RNF10: Prevenzione truffe
 
@@ -279,6 +279,6 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 # Mockup Back-end
 
-Di seguito è presente un modello del Back-end del sito.
+Di seguito è presente un modello del Back-end del sito. Esso si interfaccerà direttamente con il database MongoDB, il Node provider della Blockchain EVM e le api per mandare mail, mentre si interfaccerà attraverso il frontend con Telegram e MetaMask.
 
 <img src="sistema.png" width="400"/>
