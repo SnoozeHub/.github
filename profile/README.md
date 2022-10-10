@@ -27,11 +27,11 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.1: Utente anonimo
 
-  Il sistema consentirà agli utenti di visualizzare le stanze disponibili senza doversi registrare od autenticarsi.
+  Il sistema consentirà agli utenti di visualizzare le stanze disponibili senza doversi registrare o effettuare l'autenticazione.
 
 - RF1.2: Registrazione
 
-  Alla registrazione di un utente verranno richiesti i seguenti dati: nome, cognome, e-mail, ed un account Telegram.
+  La registrazione di un utente verrà effettuata tramite Metamask, dove verranno richiesti i seguenti dati: nome, cognome, e-mail, ed un account Telegram.
 
 - RF1.3: Verifica Registrazione
 
@@ -40,15 +40,16 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.4: Autenticazione
 
-  Il sistema consentirà agli utenti di autenticarsi tramite Metamask.
+  Il sistema consentirà agli utenti, già registrati, di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obligatoria alla prenotazione di un posto letto.
 
 - RF1.5: RESTs
 
-  Il sistema consentirà agli utenti di visualizzare il bilancio dei loro RESTs.
+  Una volta effettuata la registrazione, verranno consegnati 5 RESTs al nuovo account. Questi RESTs verranno utilizzati per pagare un host alla prenotazione di un posto letto e potranno essere guadagnati quando un guest prenoterà un proprio posto letto.
+  Il sistema consentirà agli utenti di visualizzare il bilancio dei propri RESTs.
 
 - RF1.6: Uscire dal proprio account
 
-  Il sistema consentirà agli utenti di uscire dal proprio account.
+  Il sistema consentirà agli utenti di uscire dal proprio account e di continuare la navigazione come utenti anonimi.
 
 - RF1.7: Eliminare il proprio account
 
@@ -56,41 +57,41 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.8: Visualizzare dati profilo
 
-  Il sistema consentirà agli utenti di visualizzare il proprio profilo.
+  Il sistema consentirà agli utenti di visualizzare i dati del proprio profilo.
 
 - RF1.9: Modificare dati profilo
 
-  Il sistema consentirà agli utenti di modificare il proprio profilo.
+  Il sistema consentirà agli utenti di modificare i dati del proprio profilo.
 
 #### 2. Usufruire di posti letto:
 
 - RF2.1: Cercare posti letto
 
-  Il sistema consentirà di cercare posti letto inserendo un luogo e una data: verranno elencati i posti letto in ordine di vicinanza a quel luogo e disponibili in tali date.
+  Il sistema consentirà di cercare posti letto inserendo un luogo e una o più date: verranno elencati i posti letto in ordine di vicinanza a quel luogo e disponibili in tali date.
 
-- RF2.2: Visualizzare recensioni di altri guest
+- RF2.2: Visualizzare commenti di altri guest
 
-  Il sistema consentirà agli utenti di visualizzare le recensioni di altri guest prima di effettuare la prenotazione.
+  Il sistema consentirà agli utenti di visualizzare i commenti di altri guest su un determinato posto letto prima di effettuare la prenotazione.
 
-- RF2.3: Visualizzare commenti di altri guest
+- RF2.3: Visualizzare la valutazione di altri guest
 
-  Il sistema consentirà agli utenti di visualizzare i commenti di altri guest prima di effettuare la prenotazione.
+  Il sistema consentirà agli utenti di visualizzare la valutazione di altri guest su un determinato posto letto prima di effettuare la prenotazione.
 
 - RF2.4: Prenotare un posto letto
 
-  Una volta autenticato l'utente potrà scambiare un REST per ottenere il posto letto.
+  Per poter prenotare un posto letto, l'utente dovrà effettuare l'auteticazione, specificare la data/e e successivamente scambiare un REST.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
-  Il sistema consentirà di visualizzare le proprie prenotazioni
+  Il sistema consentirà di visualizzare le proprie prenotazioni.
 
 - RF2.6: Comunicare con gli host
 
-  Il sistema consentirà ai guest di visualizzare il contatto Telegram degli host e di contattarli.
+  Il sistema consentirà ai guest di visualizzare il contatto Telegram degli host e di contattarli in caso di bisogno.
 
 - RF2.7: Recensire posti letto
 
-  Dopo aver usufruito di un posto letto, i guest potranno recensirlo.
+  Dopo aver usufruito di un posto letto, i guest potranno recensirlo descrivendo la loro esperienza.
 
 - RF2.8: Valutare posti letto
 
@@ -118,7 +119,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.3 Modificare un posto letto
 
-  Il sistema consentirà agli utenti di modificare i posti letto inseriti.
+  Il sistema consentirà agli utenti di modificare le informazioni riguardanti i posti letto inseriti.
 
 - RF3.4 Eliminare un posto letto
 
@@ -135,7 +136,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.7 Modificare un annuncio
 
-  Il sistema consentirà agli utenti di modificare gli annunci inseriti.
+  Il sistema consentirà agli utenti di modificare le informazioni riguradanti gli annunci inseriti.
 
 - RF3.8 Eliminare un annuncio
 
@@ -153,8 +154,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF1: Privacy
 
-  Il sito sarà GDPR compliant.
-  Saranno richiesti agli utenti solamente i dati strettamente necessari al servizio di cui vogliono usufruire, in ottemperanza delle vigenti disposizioni di legge in materia di tutela della privacy e trattamento dei dati, garantendo comunque un livello accettabile di affidabilità.
+  Il sito sarà GDPR compliant. Saranno richiesti agli utenti solamente i dati strettamente necessari al servizio di cui vogliono usufruire, in ottemperanza delle vigenti disposizioni di legge in materia di tutela della privacy e trattamento dei dati, garantendo comunque un livello accettabile di affidabilità.
 
 - RNF2: Memorizzazione
 
@@ -164,11 +164,19 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sito consentirà di registrarsi ed autenticarsi con Metamask. Ciò consentirà agli utenti di possedere e scambiare REST.
 
-- RNF4: Limiti di utilizzo
+- RNF4: RESTs
 
-  Perchè il sistema funzioni correttamente assumiamo che ogni utente distinto crei al più un account, così da limitare l'inflazione. Inoltre si assume che ogni utente registrato abbia almeno un posto letto da offrire, così da mantenere una corrispondenza tra i REST e i posti letto reali, sempre per mitigare l'inflazione.
+  Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma. Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi. Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi. Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
 
-- RNF5: Notifiche
+- RNF5: Scambio di RESTs
+
+  Gli scambi di rest altro non saranno che transazioni sulla blockchain EVM-compatible.
+
+- RNF6: Limiti di utilizzo
+
+  Perché il sistema funzioni correttamente assumiamo che ogni utente distinto crei al più un account, così da limitare l'inflazione. Inoltre si assume che ogni utente registrato abbia almeno un posto letto da offrire, così da mantenere una corrispondenza tra i REST e i posti letto reali, sempre per mitigare l'inflazione.
+
+- RNF7: Notifiche
 
   Verranno inviate email di notifica nei seguenti casi:
 
@@ -176,36 +184,46 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
   - Prenotazione posto letto sia all'host che all'ospite
   - Aggiunta di recensione da parte di un ospite
 
-- RNF6: Sicurezza
+- RNF8: Sicurezza
 
   Il sito garantirà la massima sicurezza per gli utenti, avvalendosi del protocollo grpc per la trasmissione dei dati attraverso la rete, e di JWT per autenticare le sessioni. Per la generazione dei JWT verrà utilizzata la signature fornita da Metamask.
 
-- RNF7: Affidabilità
+- RNF9: Affidabilità
 
-  Il token REST sarà decentralizzato su blockchain EVM-compatible, garantendo così agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
-  Inoltre il token sarà indipendente dalla piattaforma: l'unica convenzione per usarlo è implementare esclusivamente i 2 servizi elencati negli obiettivi.
-  Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
+  Il fatto che il token REST sarà decentralizzato garantirà agli utenti una maggiore affidabilità in quanto ogni transazione di REST sarà pubblicamente verificabile.
 
-- RNF8: Prevenzione truffe
+- RNF10: Prevenzione truffe
 
   La data di creazione di ogni account sarà pubblica, consentendo agli utenti di vedere da quanto tempo un account è presente nel sistema.
 
-- RNF9: Lingua di sistema
+- RNF11: Lingua di sistema
 
   Il sito sarà disponibile in lingua italiana ed inglese.
 
-- RNF10: Prestazioni
+- RNF12: Prestazioni
 
   Il sito utilizzerà sistemi di caching per migliorare le prestazioni in situazioni di scarsa connessione.
 
-- RNF11: Compatibilità
+- RNF13: Compatibilità
 
-  Il sito deve essere mobile-first, deve aderire allo standard w3c, compatibile con i browsers più utilizzati, quali:
+  Il sito deve essere mobile-first, deve aderire allo standard w3c, e deve essere compatibile con i browsers più utilizzati, quali:
 
   - Firefox 91 e successivi
   - Chromium 81 e successivi
   - Safari 16 e successivi
   - Edge 88 e successivi
+
+- RNF14: Apprendimento del sistema
+
+  Gli utenti dovranno essere in grado di utilizzare il sistema con sicurezza dopo 30 minuti di utilizzo.
+
+- RNF15: Verifica account Telegram
+
+  Gli account Telegram degli utenti non verranno verificati in quanto risulterebbe troppo complicato.
+
+- RNF16: Limiti foto
+
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo.
 
 # Mockup front-end
 
