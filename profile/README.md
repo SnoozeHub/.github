@@ -162,7 +162,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF3: Logging & Monitoring
 
-  Il sito consentirà di registrarsi ed autenticarsi con Metamask. Ciò consentirà agli utenti di possedere e scambiare REST.
+  Il sito consentirà di registrarsi ed autenticarsi con Metamask.
 
 - RNF4: RESTs
 
@@ -172,15 +172,15 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Gli scambi di REST altro non saranno che transazioni sulla blockchain EVM-compatible.
 
-- RNF6: Limiti di utilizzo
+- RNF6: Assunzione problema speculazioni/inflazioni/deficit o surplus di liquidità del token REST e assunzione problema della distribuzione di liquidità
 
-  Perché il sistema funzioni correttamente assumiamo che ogni utente distinto crei al più un account, così da limitare l'inflazione. Inoltre si assume che ogni utente registrato abbia almeno un posto letto da offrire, così da mantenere una corrispondenza tra i REST e i posti letto reali, sempre per mitigare l'inflazione.
+  Assiamiamo che saranno ignorati possibili speculazioni/inflazioni/deficit o surplus di liquidità del token REST e il problema della distribuzione di liquidità. Una causa può essere ad esempio che ogni utente crei più account.
 
 - RNF7: Notifiche
 
   Verranno inviate email di notifica nei seguenti casi:
 
-  - Registrazione nuovo account
+  - Registrazione nuovo account (verifica mail)
   - Prenotazione posto letto sia all'host che all'ospite
   - Aggiunta di recensione da parte di un ospite
 
@@ -217,7 +217,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Gli utenti dovranno essere in grado di utilizzare il sistema con sicurezza dopo 30 minuti di utilizzo.
 
-- RNF15: Verifica account Telegram
+- RNF15: Assunzione problema verifica account Telegram
 
   Gli account Telegram degli utenti non verranno verificati in quanto risulterebbe troppo complicato.
 
