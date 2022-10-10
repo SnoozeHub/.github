@@ -174,7 +174,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF6: Assunzione problema speculazioni/inflazioni/deficit o surplus di liquidità del token REST e assunzione problema della distribuzione di liquidità
 
-  Assiamiamo che saranno ignorati possibili speculazioni/inflazioni/deficit o surplus di liquidità del token REST e il problema della distribuzione di liquidità. Una causa può essere ad esempio che ogni utente crei più account.
+  Assumiamo che saranno ignorati possibili speculazioni/inflazioni/deficit o surplus di liquidità del token REST e il problema della distribuzione di liquidità. Una causa può essere ad esempio che ogni utente crei più account.
 
 - RNF7: Notifiche
 
