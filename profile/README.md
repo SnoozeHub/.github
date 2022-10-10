@@ -35,7 +35,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.3: Verifica Registrazione
 
-  Inseriti i dati della registrazione verrà inviata una mail di conferma contentente un codice segreto.
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto.
   Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
 
 - RF1.4: Autenticazione
@@ -166,7 +166,14 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF4: RESTs
 
+<<<<<<< HEAD
   Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma. Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi. Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi. Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
+=======
+  Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma.
+  Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi.
+  Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi.
+  Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
+>>>>>>> be6b12a15bd965a93e1b7e50768374355302dbc2
 
 - RNF5: Scambio di RESTs
 
@@ -278,5 +285,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 <img src="mockup/Mockup3-12.jpg" width="600"/>
 
 # Mockup Back-end
+
+Di seguito è presente un modello del Back-end del sito.
 
 <img src="sistema.png" width="400"/>
