@@ -166,14 +166,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF4: RESTs
 
-<<<<<<< HEAD
   Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma. Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi. Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi. Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
-=======
-  Il token REST sarà decentralizzato su blockchain EVM-compatible, non verrà dunque direttamente implementato dalla piattaforma.
-  Dato che quindi sarà indipendente dalla piattaforma stessa, potrà venire riutilizzato da enti terzi.
-  Dunque ogni servizio che riutilizzerà il token REST dovrà obbligatoriamente implementare esclusivamente i 2 servizi elencati negli obiettivi.
-  Ciò garantirà agli utenti di poter utilizzare i REST anche al di fuori della piattaforma.
->>>>>>> be6b12a15bd965a93e1b7e50768374355302dbc2
 
 - RNF5: Scambio di RESTs
 
