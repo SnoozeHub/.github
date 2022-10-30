@@ -101,7 +101,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.1 Aggiungere un posto letto
 
-  Gli utenti, una volta autenticati, per inserire un posto letto dovranno fornire: l'indirizzo dell'abitazione, da 1 a 5 foto, il tempo di preavviso per la prenotazione e opzionalmente delle informazioni per l'ospite.
+  Gli utenti, una volta autenticati, per inserire un posto letto dovranno fornire: l'indirizzo dell'abitazione, da 1 a 5 foto, il tempo di preavviso per la prenotazione (minimo 1, massimo 30 giorni) e opzionalmente delle informazioni per l'ospite.
   Inoltre, dovranno specificare la presenza dei seguenti servizi:
 
   - connessione internet
