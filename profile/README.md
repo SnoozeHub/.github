@@ -35,7 +35,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.3: Verifica Registrazione
 
-  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto.
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto di 6 cifre numeriche.
   Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
 
 - RF1.4: Autenticazione
