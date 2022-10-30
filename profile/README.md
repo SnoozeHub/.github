@@ -221,9 +221,9 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Gli account Telegram degli utenti non verranno verificati in quanto risulterebbe troppo complicato.
 
-- RNF16: Limiti foto
+- RNF16: Foto
 
-  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo.
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
 
 # Mockup front-end
 
