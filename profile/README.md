@@ -127,7 +127,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.5 Aggiungere un annuncio
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità: così facendo verrà creato un annuncio.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità (massimo nei 90 giorni successivi): così facendo verrà creato un annuncio.
   Fatto ciò, gli altri utenti potranno prenotare il posto letto.
 
 - RF3.6: Visualizzare i propri annunci
