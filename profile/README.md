@@ -79,7 +79,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.4: Prenotare un posto letto
 
-  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, specificare la data/e e successivamente scambiare un REST.
+  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, e successivamente scambiare un REST. Si può prenotare al massimo entro 90 giorni di anticipo.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
