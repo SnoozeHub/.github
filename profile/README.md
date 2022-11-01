@@ -35,7 +35,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.3: Verifica Registrazione
 
-  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto.
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto di 6 cifre numeriche.
   Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
 
 - RF1.4: Autenticazione
@@ -79,7 +79,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.4: Prenotare un posto letto
 
-  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, specificare la data/e e successivamente scambiare un REST.
+  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, e successivamente scambiare un REST. Si può prenotare al massimo entro 90 giorni di anticipo.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
@@ -101,7 +101,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.1 Aggiungere un posto letto
 
-  Gli utenti, una volta autenticati, per inserire un posto letto dovranno fornire: l'indirizzo dell'abitazione, da 1 a 5 foto, il tempo di preavviso per la prenotazione e opzionalmente delle informazioni per l'ospite.
+  Gli utenti, una volta autenticati, per inserire un posto letto dovranno fornire: l'indirizzo dell'abitazione, da 1 a 5 foto, il tempo di preavviso per la prenotazione (minimo 1, massimo 30 giorni) e opzionalmente delle informazioni per l'ospite.
   Inoltre, dovranno specificare la presenza dei seguenti servizi:
 
   - connessione internet
@@ -127,7 +127,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.5 Aggiungere un annuncio
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità: così facendo verrà creato un annuncio.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità (massimo nei 90 giorni successivi): così facendo verrà creato un annuncio.
   Fatto ciò, gli altri utenti potranno prenotare il posto letto.
 
 - RF3.6: Visualizzare i propri annunci
@@ -221,9 +221,9 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Gli account Telegram degli utenti non verranno verificati in quanto risulterebbe troppo complicato.
 
-- RNF16: Limiti foto
+- RNF16: Foto
 
-  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo.
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
 
 # Mockup front-end
 
