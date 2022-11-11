@@ -25,9 +25,8 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 #### 1. Utenti:
 
-- RF1.1: Utente anonimo
-
-  Il sistema consentirà agli utenti di visualizzare le stanze disponibili senza doversi registrare o effettuare l'autenticazione.
+- RF1.1: Cercare posti letto
+  Il sistema consentirà di cercare posti letto senza necessità di registrarsi o autenticarsi. Inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri verranno elencati i posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
 
 - RF1.2: Registrazione
 
