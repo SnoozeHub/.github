@@ -66,7 +66,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.1: Cercare posti letto
 
-  Il sistema consentirà di cercare posti letto inserendo un luogo e una o più date: verranno elencati i posti letto in ordine di vicinanza a quel luogo e disponibili in tali date.
+  Il sistema consentirà di cercare posti letto  inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri. Il sistema mostrerà posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
 
 - RF2.2: Visualizzare commenti di altri guest
 
