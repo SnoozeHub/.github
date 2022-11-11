@@ -66,7 +66,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.1: Cercare posti letto
 
-  Il sistema consentirà di cercare posti letto  inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri. Il sistema mostrerà posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
+  Il sistema consentirà di cercare posti letto inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri. Il sistema mostrerà posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
 
 - RF2.2: Visualizzare commenti di altri guest
 
@@ -126,7 +126,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.5 Aggiungere un annuncio
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità (massimo nei 90 giorni successivi): così facendo verrà creato un annuncio.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo verrà creato un annuncio.
   Fatto ciò, gli altri utenti potranno prenotare il posto letto.
 
 - RF3.6: Visualizzare i propri annunci
@@ -135,7 +135,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF3.7 Modificare un annuncio
 
-  Il sistema consentirà agli utenti di modificare le informazioni riguardanti gli annunci inseriti.
+  Il sistema consentirà agli utenti di modificare la data di inizio e di fine disponibilità degli annunci .
 
 - RF3.8 Eliminare un annuncio
 
