@@ -39,11 +39,11 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.4: Autenticazione
 
-  Il sistema consentirà agli utenti, già registrati, di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obbligatoria alla prenotazione di un posto letto.
+  Il sistema consentirà agli utenti già registrati di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obbligatoria alla prenotazione di un posto letto.
 
 - RF1.5: RESTs
 
-  Una volta effettuata la registrazione, verranno consegnati 5 RESTs al nuovo account. Questi RESTs verranno utilizzati per pagare un host alla prenotazione di un posto letto e potranno essere guadagnati quando un guest prenoterà un proprio posto letto.
+  Una volta effettuata la registrazione verranno consegnati 5 RESTs al nuovo account. Questi RESTs verranno utilizzati per pagare un host alla prenotazione di un posto letto e potranno essere guadagnati quando un guest prenoterà un proprio posto letto.
   Il sistema consentirà agli utenti di visualizzare il bilancio dei propri RESTs.
 
 - RF1.6: Uscire dal proprio account
