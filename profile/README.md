@@ -78,7 +78,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.4: Prenotare un posto letto
 
-  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, e successivamente scambiare un REST. Si può prenotare al massimo entro 90 giorni di anticipo.
+  Per poter prenotare un posto letto l'utente dovrà necessariamente effettuare l'autenticazione, selezionare il posto letto d'interesse tra quelli offerti dal sistema, specificare le date in cui intende permanere, e successivamente scambiare un REST. Si può prenotare al massimo con un anticipo di 90 giorni.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
@@ -124,26 +124,25 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sistema consentirà agli utenti di eliminare i posti letto inseriti.
 
-- RF3.5 Aggiungere un annuncio
+- RF3.5 Aggiungere un nuovo intervallo di disponibilità
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo verrà creato un annuncio.
-  Fatto ciò, gli altri utenti potranno prenotare il posto letto.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo gli altri utenti potranno prenotare il posto letto nell'intervallo di tempo specificato.
 
-- RF3.6: Visualizzare i propri annunci
+- RF3.6: Visualizzare i propri intervalli di disponibilità
 
-  Il sistema consentirà agli utenti di visualizzare gli annunci inseriti.
+  Il sistema consentirà agli utenti di visualizzare gli intervalli di disponibilità inseriti.
 
-- RF3.7 Modificare un annuncio
+- RF3.7 Modificare un intervallo di disponibilità
 
-  Il sistema consentirà agli utenti di modificare la data di inizio e di fine disponibilità degli annunci .
+  Il sistema consentirà agli utenti di modificare la data di inizio e di fine disponibilità.
 
-- RF3.8 Eliminare un annuncio
+- RF3.8 Eliminare un intervallo disponibilità
 
-  Il sistema consentirà agli utenti di eliminare gli annunci inseriti.
+  Il sistema consentirà agli utenti di eliminare un intervallo di disponibilità.
 
-- RF3.9: Visualizzare prenotazioni annuncio
+- RF3.9: Visualizzare prenotazioni relative ad una disponibilità
 
-  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un annuncio. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
+  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un certo intervallo di disponibilità. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
 
 - RF3.10 Visualizzare i commenti dei guest
 
@@ -161,7 +160,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF2: Memorizzazione
 
-  Il sito utilizzerà MongoDB per memorizzare i dati degli utenti, i loro annunci contenti foto ed informazioni.
+  Il sito utilizzerà MongoDB per memorizzare i dati degli utenti, i loro posti letto, contenti foto ed informazioni, e le relative disponibilità.
 
 - RNF3: Logging & Monitoring
 
@@ -226,7 +225,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF16: Foto
 
-  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni posto letto, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
 
 # Mockup front-end
 
@@ -256,7 +255,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 <img src="mockup/Mockup-06.jpg" width="600"/>
 
-### - Panoramica annuncio
+### - Panoramica posto letto
 
 <img src="mockup/Mockup-07.jpg" width="600"/>
 
@@ -276,7 +275,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 <img src="mockup/Mockup-11.jpg" width="600"/>
 
-### - Inserimento nuovo annuncio
+### - Inserimento nuovo intervallo di disponibilità
 
 <img src="mockup/Mockup-12.jpg" width="600"/>
 
