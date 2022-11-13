@@ -141,11 +141,15 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sistema consentirà agli utenti di eliminare gli annunci inseriti.
 
-- RF3.9 Visualizzare i commenti dei guest
+- RF3.9: Visualizzare prenotazioni annuncio
+
+  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un annuncio. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
+
+- RF3.10 Visualizzare i commenti dei guest
 
   Il sistema consentirà agli host di visualizzare i commenti dei guest.
 
-- RF3.10 Visualizzare le valutazioni dei guest
+- RF3.11 Visualizzare le valutazioni dei guest
 
   Il sistema consentirà agli host di visualizzare le valutazioni lasciate dai guest.
 
