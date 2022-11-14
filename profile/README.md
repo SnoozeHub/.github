@@ -25,9 +25,8 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 #### 1. Utenti:
 
-- RF1.1: Utente anonimo
-
-  Il sistema consentirà agli utenti di visualizzare le stanze disponibili senza doversi registrare o effettuare l'autenticazione.
+- RF1.1: Cercare posti letto
+  Il sistema consentirà di cercare posti letto senza necessità di registrarsi o autenticarsi. Inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri verranno elencati i posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
 
 - RF1.2: Registrazione
 
@@ -35,16 +34,16 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF1.3: Verifica Registrazione
 
-  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto di 6 cifre numeriche.
+  Inseriti i dati della registrazione verrà inviata una mail di conferma contenente un codice segreto di 6 cifre numeriche avente validità di 2 ore, trascorse le quali sarà necessario ripetere la procedura di registrazione.
   Bisognerà verificare tale codice ed aggiungere il proprio account Metamask per i futuri accessi.
 
 - RF1.4: Autenticazione
 
-  Il sistema consentirà agli utenti, già registrati, di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obbligatoria alla prenotazione di un posto letto.
+  Il sistema consentirà agli utenti già registrati di autenticarsi tramite Metamask. Questa operazione sarà facoltativa durante la navigazione nel sistema, ma diventerà obbligatoria alla prenotazione di un posto letto.
 
 - RF1.5: RESTs
 
-  Una volta effettuata la registrazione, verranno consegnati 5 RESTs al nuovo account. Questi RESTs verranno utilizzati per pagare un host alla prenotazione di un posto letto e potranno essere guadagnati quando un guest prenoterà un proprio posto letto.
+  Una volta effettuata la registrazione verranno consegnati 5 RESTs al nuovo account. Questi RESTs verranno utilizzati per pagare un host alla prenotazione di un posto letto e potranno essere guadagnati quando un guest prenoterà un proprio posto letto.
   Il sistema consentirà agli utenti di visualizzare il bilancio dei propri RESTs.
 
 - RF1.6: Uscire dal proprio account
@@ -67,7 +66,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.1: Cercare posti letto
 
-  Il sistema consentirà di cercare posti letto inserendo un luogo e una o più date: verranno elencati i posti letto in ordine di vicinanza a quel luogo e disponibili in tali date.
+  Il sistema consentirà di cercare posti letto inserendo un luogo, una data di inizio ed una di fine e opzionalmente dei filtri. Il sistema mostrerà posti letto conformi ai filtri specificati in ordine di vicinanza a quel luogo e disponibili in tali date.
 
 - RF2.2: Visualizzare commenti di altri guest
 
@@ -79,7 +78,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RF2.4: Prenotare un posto letto
 
-  Per poter prenotare un posto letto, l'utente dovrà effettuare l'autenticazione, e successivamente scambiare un REST. Si può prenotare al massimo entro 90 giorni di anticipo.
+  Per poter prenotare un posto letto l'utente dovrà necessariamente effettuare l'autenticazione, selezionare il posto letto d'interesse tra quelli offerti dal sistema, specificare le date in cui intende permanere, e successivamente scambiare un REST. Si può prenotare al massimo con un anticipo di 90 giorni.
 
 - RF2.5: Visualizzare le proprie prenotazioni
 
@@ -125,28 +124,31 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sistema consentirà agli utenti di eliminare i posti letto inseriti.
 
-- RF3.5 Aggiungere un annuncio
+- RF3.5 Aggiungere un nuovo intervallo di disponibilità
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità (massimo nei 90 giorni successivi): così facendo verrà creato un annuncio.
-  Fatto ciò, gli altri utenti potranno prenotare il posto letto.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo gli altri utenti potranno prenotare il posto letto nell'intervallo di tempo specificato.
 
-- RF3.6: Visualizzare i propri annunci
+- RF3.6: Visualizzare i propri intervalli di disponibilità
 
-  Il sistema consentirà agli utenti di visualizzare gli annunci inseriti.
+  Il sistema consentirà agli utenti di visualizzare gli intervalli di disponibilità inseriti.
 
-- RF3.7 Modificare un annuncio
+- RF3.7 Modificare un intervallo di disponibilità
 
-  Il sistema consentirà agli utenti di modificare le informazioni riguardanti gli annunci inseriti.
+  Il sistema consentirà agli utenti di modificare la data di inizio e di fine disponibilità.
 
-- RF3.8 Eliminare un annuncio
+- RF3.8 Eliminare un intervallo disponibilità
 
-  Il sistema consentirà agli utenti di eliminare gli annunci inseriti.
+  Il sistema consentirà agli utenti di eliminare un intervallo di disponibilità.
 
-- RF3.9 Visualizzare i commenti dei guest
+- RF3.9: Visualizzare prenotazioni relative ad una disponibilità
+
+  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un certo intervallo di disponibilità. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
+
+- RF3.10 Visualizzare i commenti dei guest
 
   Il sistema consentirà agli host di visualizzare i commenti dei guest.
 
-- RF3.10 Visualizzare le valutazioni dei guest
+- RF3.11 Visualizzare le valutazioni dei guest
 
   Il sistema consentirà agli host di visualizzare le valutazioni lasciate dai guest.
 
@@ -158,7 +160,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF2: Memorizzazione
 
-  Il sito utilizzerà MongoDB per memorizzare i dati degli utenti, i loro annunci contenti foto ed informazioni.
+  Il sito utilizzerà MongoDB per memorizzare i dati degli utenti, i loro posti letto, contenti foto ed informazioni, e le relative disponibilità.
 
 - RNF3: Logging & Monitoring
 
@@ -223,7 +225,7 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
 - RNF16: Foto
 
-  Gli utenti dovranno caricare da 1 a 5 foto per ogni annuncio, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
+  Gli utenti dovranno caricare da 1 a 5 foto per ogni posto letto, mentre potranno caricare al massimo una foto per il proprio profilo. Tutte le foto saranno dovranno avere una dimensione massima di 512kb e dovranno avere un aspect ratio 1:1
 
 # Mockup front-end
 
@@ -253,7 +255,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 <img src="mockup/Mockup-06.jpg" width="600"/>
 
-### - Panoramica annuncio
+### - Panoramica posto letto
 
 <img src="mockup/Mockup-07.jpg" width="600"/>
 
@@ -273,7 +275,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 <img src="mockup/Mockup-11.jpg" width="600"/>
 
-### - Inserimento nuovo annuncio
+### - Inserimento nuovo intervallo di disponibilità
 
 <img src="mockup/Mockup-12.jpg" width="600"/>
 
