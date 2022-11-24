@@ -124,25 +124,25 @@ Chi ospita viene chiamato _host_, chi viene ospitato _guest_.
 
   Il sistema consentirà agli utenti di eliminare i posti letto inseriti.
 
-- RF3.5 Aggiungere un nuovo intervallo di disponibilità
+- RF3.5 Aggiungere un nuovo intervallo disponibilità
 
-  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne la disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo gli altri utenti potranno prenotare il posto letto nell'intervallo di tempo specificato.
+  Sarà possibile scegliere tra i posti letto caricati sul proprio account e specificarne l'intervallo disponibilità inserendone la data di inizio e di fine (quest'ultima non potrà superare i 90 successivi alla data di aggiunta): così facendo gli altri utenti potranno prenotare il posto letto nell'intervallo di tempo specificato.
 
-- RF3.6: Visualizzare i propri intervalli di disponibilità
+- RF3.6: Visualizzare i propri intervalli disponibilità
 
-  Il sistema consentirà agli utenti di visualizzare gli intervalli di disponibilità inseriti.
+  Il sistema consentirà agli utenti di visualizzare gli intervalli disponibilità inseriti.
 
-- RF3.7 Modificare un intervallo di disponibilità
+- RF3.7 Modificare un intervallo disponibilità
 
-  Il sistema consentirà agli utenti di modificare la data di inizio e di fine disponibilità.
+  Il sistema consentirà agli utenti di modificare la data di inizio e di fine dell'intervallo disponibilità.
 
 - RF3.8 Eliminare un intervallo disponibilità
 
-  Il sistema consentirà agli utenti di eliminare un intervallo di disponibilità.
+  Il sistema consentirà agli utenti di eliminare un intervallo disponibilità.
 
-- RF3.9: Visualizzare prenotazioni relative ad una disponibilità
+- RF3.9: Visualizzare prenotazioni relative ad un intervallo disponibilità
 
-  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un certo intervallo di disponibilità. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
+  Il sistema consentirà agli host di visualizzare le prenotazioni relative ad un certo intervallo disponibilità. Per ogni prenotazione verrà mostrato anche il codice segreto che il guest dovrà esibire per autenticarsi.
 
 - RF3.10 Visualizzare i commenti dei guest
 
@@ -275,7 +275,7 @@ Di seguito sono riportati dei mock-up delle schermate del sito. Sono rappresenta
 
 <img src="mockup/Mockup-11.jpg" width="600"/>
 
-### - Inserimento nuovo intervallo di disponibilità
+### - Inserimento nuovo intervallo disponibilità
 
 <img src="mockup/Mockup-12.jpg" width="600"/>
 
